@@ -78,7 +78,7 @@ export default function Navbar() {
 
                 {/* Mobile menu links */}
                 <nav className="flex flex-col space-y-4 mt-10">
-                    <Link href="/about" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                    <Link href="/aboutus" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
                         ABOUT US
                     </Link>
                     <Link href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
