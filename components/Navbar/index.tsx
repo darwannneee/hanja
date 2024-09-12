@@ -14,7 +14,7 @@ export default function Navbar() {
     const pathname = usePathname(); // Get the current path
 
     // State for controlling the burger menu
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); // Correct, no need for 'any' here, because it infers boolean
 
     // Toggle function for the burger menu
     const toggleMenu = () => {
@@ -22,7 +22,7 @@ export default function Navbar() {
     };
 
     // Check if a path is active
-    const isActive = (path: any) => pathname === path;
+    const isActive = (path: string) => pathname === path;
 
     return (
         <nav className="fixed w-full z-50 h-20 bg-[#faf6e5] flex justify-between items-center px-8 md:px-14 text-[#1b4d89]">
