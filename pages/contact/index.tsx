@@ -15,7 +15,7 @@ export default function Contact() {
             <Navbar />
 
             <div className="pt-10 md:pt-24 2xl:pt-44 text-[#1b4d89]">
-                <h1 className={`${Peristiwa.className} text-6xl pt-24`}>Let's Connect</h1>
+                <h1 className={`${Peristiwa.className} text-6xl pt-24`}>Let&apos;s Connect</h1>
 
                 <div className="pt-10 md:pt-20 2xl:pt-32">
                     <h1 className={`${FuturaStdMedium.className} text-3xl`}>HANJA GROUP HEAD QUARTERS</h1>

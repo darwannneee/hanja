@@ -3,6 +3,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation"; // This hook replaces `useRouter` in Next.js 13 for client-side routing
 import HanjaLogo from "@/public/assets/img/Logo_Hanja.png";
 import Image from "next/image";
+import Link from "next/link"; // Import Link
 
 // Import Font
 import localFont from "next/font/local";
@@ -38,10 +39,18 @@ export default function Navbar() {
 
             {/* Navigation links (hidden on mobile, visible on desktop) */}
             <div className={`hidden md:flex space-x-10 ${FuturaStdCondensed.className} text-xl`}>
-                <a href="/about" className={`hover:text-[#1b4d89] ${isActive('/about') ? 'border-b-2 border-[#1b4d89]' : ''}`}>ABOUT US</a>
-                <a href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>BRANDS</a>
-                <a href="/articles" className={`hover:text-[#1b4d89] ${isActive('/articles') ? 'border-b-2 border-[#1b4d89]' : ''}`}>ARTICLES</a>
-                <a href="/contact" className={`hover:text-[#1b4d89] ${isActive('/contact') ? 'border-b-2 border-[#1b4d89]' : ''}`}>CONTACT</a>
+                <Link href="/about" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                    ABOUT US
+                </Link>
+                <Link href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                    BRANDS
+                </Link>
+                <Link href="/articles" className={`hover:text-[#1b4d89] ${isActive('/articles') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                    ARTICLES
+                </Link>
+                <Link href="/contact" className={`hover:text-[#1b4d89] ${isActive('/contact') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                    CONTACT
+                </Link>
             </div>
 
             {/* Burger menu for mobile */}
@@ -69,10 +78,18 @@ export default function Navbar() {
 
                 {/* Mobile menu links */}
                 <nav className="flex flex-col space-y-4 mt-10">
-                    <a href="/about" className={`hover:text-[#1b4d89] ${isActive('/about') ? 'border-b-2 border-[#1b4d89]' : ''}`}>ABOUT US</a>
-                    <a href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>BRANDS</a>
-                    <a href="/articles" className={`hover:text-[#1b4d89] ${isActive('/articles') ? 'border-b-2 border-[#1b4d89]' : ''}`}>ARTICLES</a>
-                    <a href="/contact" className={`hover:text-[#1b4d89] ${isActive('/contact') ? 'border-b-2 border-[#1b4d89]' : ''}`}>CONTACT</a>
+                    <Link href="/about" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                        ABOUT US
+                    </Link>
+                    <Link href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                        BRANDS
+                    </Link>
+                    <Link href="/articles" className={`hover:text-[#1b4d89] ${isActive('/articles') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                        ARTICLES
+                    </Link>
+                    <Link href="/contact" className={`hover:text-[#1b4d89] ${isActive('/contact') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                        CONTACT
+                    </Link>
                 </nav>
             </div>
         </nav>
