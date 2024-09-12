@@ -39,7 +39,7 @@ export default function AboutUs() {
                     {/* Teks di tengah-tengah */}
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h1 className={`text-white text-center px-4 md:px-72 ${FuturaStdCondensed.className} text-xl md:text-3xl`}>
-                            &quot;A multi sector enterprise with a distinctive Nusantara theme, offering both authentic experiences and adaptive solutions tailored for today's discerning wanderers.&quot;
+                            &quot;A multi sector enterprise with a distinctive Nusantara theme, offering both authentic experiences and adaptive solutions tailored for today&apos;s discerning wanderers.&quot;
                         </h1>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ export default function AboutUs() {
             <div className={`pt-20 text-center text-[#1b4d89] mx-10 md:mx-20 ${FuturaStdBook.className}`}>
                 <h1>PT. Multi Aneka Cipta (Hanja Group) is a dynamic multi-sector enterprise deeply rooted in the rich and authentic heritage of Nusantara culture, facilitaling the introduction of regional uniqueness across diverse areas. Committed to continuous adaption and growth, we operate in various sectors including dining, entertainment, retail, and services, while embbedding the essence of Nusatara into each of these fields.</h1>
 
-                <h1 className="pt-6">Our adaptive approach allows us to steer our ventures towards ongiong expansion, ensuring both sustainable progress and long-term success. Throught our initiatives, PT Hanja Group is dedicated to preserving Indonesia's cultural legacy and implementing practices that educate the public about its diminishing aspects, By valuing the past, shaping the present, and envisioning a bright future, PT Hanja Group aims to benefit both its workforce and the wider community.</h1>
+                <h1 className="pt-6">Our adaptive approach allows us to steer our ventures towards ongiong expansion, ensuring both sustainable progress and long-term success. Throught our initiatives, PT Hanja Group is dedicated to preserving Indonesia&apos;s cultural legacy and implementing practices that educate the public about its diminishing aspects, By valuing the past, shaping the present, and envisioning a bright future, PT Hanja Group aims to benefit both its workforce and the wider community.</h1>
             </div>
 
 

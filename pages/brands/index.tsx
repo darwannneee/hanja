@@ -10,7 +10,6 @@ import "@/app/globals.css"
 import SalingNgerti from "@/public/assets/img/SalingNgerti.png"
 import Footer from "@/components/Footer";
 
-const FuturaStdCondensed = localFont({ src: "../../app/fonts/FuturaStdCondensed.otf" });
 const Peristiwa = localFont({ src: "../../app/fonts/Peristiwa.otf" });
 const FuturaStdMedium = localFont({ src: "../../app/fonts/FuturaStdMedium.otf" });
 const FuturaStdCondensedLight = localFont({ src: "../../app/fonts/FuturaStdCondensedLight.otf" });
@@ -37,7 +36,7 @@ export default function  Brands() {
 
             <div className={`text-center pt-14 text-[#1b4d89]`}>
                 <h1 className={`${Peristiwa.className}  text-6xl`}>Saling Ngerti</h1>
-                <h1 className={`${FuturaStdMedium.className} px-14 md:px-36 pt-5`}>Step into "Saling Ngerti", where the charm of a bygone era meets the vibrancy of modern Indonesian coffe culture. In our vintage-inspired cafe. every detail whispers stories of tradition while embracing today's style. Delight in our carefully roosted Indonesian beans, brewed to perfection by passionate baristas. Here, classic elegance dances with cantemporary comfort, offering a sip of heritage and a taste of innovation in every cup</h1>
+                <h1 className={`${FuturaStdMedium.className} px-14 md:px-36 pt-5`}>Step into &quot;Saling Ngerti&quot;, where the charm of a bygone era meets the vibrancy of modern Indonesian coffe culture. In our vintage-inspired cafe. every detail whispers stories of tradition while embracing today&apos;s style. Delight in our carefully roosted Indonesian beans, brewed to perfection by passionate baristas. Here, classic elegance dances with cantemporary comfort, offering a sip of heritage and a taste of innovation in every cup</h1>
 
                 {/* Alamat */}
                 <div className={`${FuturaStdCondensedLight.className} px-14 pt-8 text-base md:text-xl`}>
