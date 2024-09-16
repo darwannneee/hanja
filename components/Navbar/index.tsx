@@ -34,12 +34,15 @@ export default function Navbar() {
 
             {/* Logo in the center */}
             <div className="absolute left-1/2 transform -translate-x-1/2">
-                <Image src={HanjaLogo.src} alt="Hanja Group" width={80} height={80} />
+                <a href="./">
+                    <Image src={HanjaLogo.src} alt="Hanja Group" width={80} height={80} />
+                </a>
+                
             </div>
 
             {/* Navigation links (hidden on mobile, visible on desktop) */}
             <div className={`hidden md:flex space-x-10 ${FuturaStdCondensed.className} text-xl`}>
-                <Link href="/about" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
+                <Link href="/aboutus" className={`hover:text-[#1b4d89] ${isActive('/aboutus') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
                     ABOUT US
                 </Link>
                 <Link href="/brands" className={`hover:text-[#1b4d89] ${isActive('/brands') ? 'border-b-2 border-[#1b4d89]' : ''}`}>
@@ -53,7 +56,7 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            {/* Burger menu for mobile */}
+            {/* Burger Menu for Mobile */}
             <div className="md:hidden ml-auto">
                 <button onClick={toggleMenu} className="focus:outline-none">
                     {/* Burger icon */}
