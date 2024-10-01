@@ -33,7 +33,7 @@ export default function Footer() {
             console.log('Timestamp:', timestamp);
 
             // Send the form data to the API
-            const response = await fetch('https://api.hanjagroup.com/api/inputData', {
+            const response = await fetch('https://api.hanjagroup.com/api/postData', {
                 method: 'POST',
                 body: formData,
             });
