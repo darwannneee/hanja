@@ -93,7 +93,7 @@ export default function Footer() {
 
             <div className={`text-center text-sm pt-8 ${FuturaStdLight.className}`}>
                 <h1>WE ARE DEDICATED TO SAFEGUARD YOUR PERSONAL INFORMATION WHILE YOU EXPLORE OUR WEBSITE.</h1>
-                <h1>IF YOU WISH TO OPT OUT ANY TIME, SIMPLY CLICK 'UNSUBSCRIBE' IN ANY EMAIL WE SEND YOU.</h1>
+                <h1>IF YOU WISH TO OPT OUT ANY TIME, SIMPLY CLICK &apos;UNSUBSCRIBE&apos; IN ANY EMAIL WE SEND YOU.</h1>
             </div>
         </footer>
     );
