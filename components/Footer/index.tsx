@@ -17,20 +17,9 @@ export default function Footer() {
             // Create FormData object and populate it with form data
             const formData = new FormData(event.currentTarget);
 
-            // Get individual form field values using FormData.get()
-            const name = formData.get('name');
-            const phone = formData.get('phone');
-            const email = formData.get('email');
-
             // Add the timestamp manually
             const timestamp = new Date().toISOString();
             formData.append('timestamp', timestamp);
-
-            // Debugging - Print form data to verify
-            console.log('Name:', name);
-            console.log('Phone:', phone);
-            console.log('Email:', email);
-            console.log('Timestamp:', timestamp);
 
             // Send the form data to the API
             const response = await fetch('https://api.hanjagroup.com/api/postData', {
