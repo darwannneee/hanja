@@ -22,7 +22,7 @@ export default function Footer() {
             formData.append('timestamp', timestamp);
 
             // Kirim request ke API dengan form data
-            const response = await fetch('https://api.hanjagroup.com/api/inputData', {
+            const response = await fetch('https://api.hanjagroup.com/api/postData', {
                 method: 'POST',
                 body: formData,
             });
